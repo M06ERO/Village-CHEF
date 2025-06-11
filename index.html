@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="autor" content="Amir Iyad abualhin"/>
+    <meta name="description" content="Village CHEF resturant web app for booking your one table">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favi.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Village CHEF</title> 
+  </head>
+  <body>
+
+    <nav>
+      <div class="logo">
+        <img src="./assets/logo.png" alt="logo" width="130" />
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Menu</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="icons">
+        <div class="search">
+          <svg viewBox="0 0 39 40" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M37 37.5L28.5417 29.0417M33.1111 18.0556C33.1111 26.6467 26.1467 33.6111 17.5556 33.6111C8.96446 33.6111 2 26.6467 2 18.0556C2 9.46446 8.96446 2.5 17.5556 2.5C26.1467 2.5 33.1111 9.46446 33.1111 18.0556Z"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="cart">
+          <svg viewBox="0 0 46 44" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2 2H9.46929L14.4737 27.5048C14.6445 28.3817 15.1122 29.1694 15.7949 29.7301C16.4777 30.2907 17.332 30.5886 18.2084 30.5714H36.3587C37.2351 30.5886 38.0894 30.2907 38.7722 29.7301C39.4549 29.1694 39.9226 28.3817 40.0934 27.5048L43.0811 11.5238H11.3366M18.8059 40.0952C18.8059 41.1472 17.9699 42 16.9386 42C15.9073 42 15.0713 41.1472 15.0713 40.0952C15.0713 39.0433 15.9073 38.1905 16.9386 38.1905C17.9699 38.1905 18.8059 39.0433 18.8059 40.0952ZM39.3464 40.0952C39.3464 41.1472 38.5104 42 37.4791 42C36.4478 42 35.6118 41.1472 35.6118 40.0952C35.6118 39.0433 36.4478 38.1905 37.4791 38.1905C38.5104 38.1905 39.3464 39.0433 39.3464 40.0952Z"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <button class="loginbtn">
+          <svg
+            width="35"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.7477 2H26.9699C27.7951 2 28.5864 2.32778 29.1698 2.91122C29.7533 3.49467 30.0811 4.28599 30.0811 5.11111V26.8889C30.0811 27.714 29.7533 28.5053 29.1698 29.0888C28.5864 29.6722 27.7951 30 26.9699 30H20.7477M12.9699 23.7778L20.7477 16M20.7477 16L12.9699 8.22222M20.7477 16H2.08105"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          login
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <div class="left_side">
+        <div class="top">
+          <h1>Grab Big Deals <br />on <span>Yummy Meals!</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Aenean mau risnam tortor
+            curabitur phasellus.
+          </p>
+          <button>Get Started</button>
+        </div>
+        <div class="bottom">
+          <div class="pics">
+            <div class="pic n1">
+              <img src="./assets/Avatar 1.png" alt="avatar" width="50px" />
+            </div>
+            <div class="pic n2">
+              <img src="./assets/Avatar 2.png" alt="avatar" width="50px" />
+            </div>
+            <div class="pic n3">
+              <img src="./assets/Avatar 3.png" alt="avatar" width="50px" />
+            </div>
+          </div>
+          <div class="text">
+            <h4>Our Happy Customers</h4>
+            <h4 class="rate_t">
+              <svg
+                width="25"
+                height="23"
+                viewBox="0 0 25 23"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                />
+              </svg>
+              4.8
+              <span> (18.5k Review) </span>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="rigth_side">
+        <div class="dish">
+          <img
+            style="z-index: -1"
+            src="./assets/shadow.png"
+            alt="shadow"
+            class="shadow"
+            width="500"
+          />
+          <img src="./assets/food img.png" alt="food" width="500" class="d" />
+          <div class="smile">
+            <img src="./assets/favi.png" alt="smile_face" width="50" />
+          </div>
+          <svg
+            class="n1"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="7.3574"
+              y="-1.00003"
+              width="18"
+              height="18"
+              rx="5"
+              transform="rotate(27.6649 7.3574 -1.00003)"
+              fill="#F7B41A"
+            />
+          </svg>
+          <svg
+            class="n2"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="7.3574"
+              y="-1.00003"
+              width="18"
+              height="18"
+              rx="5"
+              transform="rotate(27.6649 7.3574 -1.00003)"
+              fill="#F7B41A"
+            />
+          </svg>
+          <div class="fire">
+            <img src="./assets/fire.png" alt="" width="40" />
+          </div>
+        </div>
+        <div class="phone">
+          <div class="name">
+            <div class="photo">
+              <img src="./assets/Avatar 2.png" alt="avatar" width="40" />
+            </div>
+            <div class="n">
+              <h4>Jon Williamson</h4>
+              <h5>Food Courier</h5>
+            </div>
+          </div>
+          <div class="icon">
+            <svg
+              width="18"
+              viewBox="0 0 27 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26.4992 19.966V23.88C26.5007 24.2434 26.4261 24.6031 26.2802 24.936C26.1344 25.2689 25.9205 25.5678 25.6522 25.8134C25.3839 26.059 25.0672 26.2461 24.7223 26.3625C24.3774 26.4789 24.0119 26.5221 23.6493 26.4894C19.6266 26.0532 15.7626 24.6813 12.3676 22.484C9.20898 20.4809 6.53104 17.8083 4.52394 14.6559C2.31462 11.2523 0.939714 7.3771 0.510611 3.34433C0.477943 2.98355 0.520905 2.61992 0.636763 2.27661C0.752621 1.93331 0.938835 1.61783 1.18355 1.35029C1.42827 1.08274 1.72612 0.868973 2.05815 0.722604C2.39018 0.576235 2.74911 0.500468 3.11208 0.500126H7.0339C7.66833 0.493895 8.28338 0.718111 8.76442 1.13098C9.24546 1.54386 9.55965 2.11721 9.64845 2.74418C9.81398 3.99676 10.121 5.22664 10.5635 6.41034C10.7394 6.87732 10.7775 7.38483 10.6732 7.87273C10.569 8.36064 10.3267 8.80849 9.97527 9.16322L8.31503 10.8202C10.176 14.0865 12.8858 16.791 16.1587 18.6483L17.8189 16.9913C18.1743 16.6405 18.6231 16.3988 19.112 16.2947C19.6008 16.1907 20.1093 16.2287 20.5772 16.4042C21.7633 16.8459 22.9956 17.1523 24.2507 17.3175C24.8857 17.4069 25.4657 17.7261 25.8802 18.2144C26.2948 18.7028 26.5151 19.3261 26.4992 19.966Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/food rectangle.png" alt="food" width="90" />
+          <div class="name">
+            <div class="na">
+              <h3>Cheese Pizza</h3>
+            </div>
+            <div class="rate">
+              <svg
+                width="20"
+                viewBox="0 0 25 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                  fill="#F7B41A"
+                />
+              </svg>
+
+              <svg
+                width="20"
+                viewBox="0 0 25 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                  fill="#F7B41A"
+                />
+              </svg>
+
+              <svg
+                width="20"
+                viewBox="0 0 25 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                  fill="#F7B41A"
+                />
+              </svg>
+
+              <svg
+                width="20"
+                viewBox="0 0 25 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"
+                  fill="#F7B41A"
+                />
+              </svg>
+
+              <svg
+                width="20"
+                viewBox="0 0 22 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.7568 8.33301L12.9248 8.85059H19.1533L14.5547 12.1914L14.1143 12.5117L14.2822 13.0303L16.0381 18.4346L11.4404 15.0947L11 14.7744L10.5596 15.0947L5.96094 18.4346L7.71777 13.0303L7.88574 12.5117L7.44531 12.1914L2.84668 8.85059H9.0752L9.24316 8.33301L11 2.9248L12.7568 8.33301Z"
+                  stroke="#F7B41A"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+            <div class="price">
+              <h3><span>₹ </span>299/-</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>

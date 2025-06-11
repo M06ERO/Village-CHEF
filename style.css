@@ -1,0 +1,502 @@
+:root {
+  --color-white: #ffffff;
+  --color-yellow: #f7b41a;
+  --color-ligthblack: #171717;
+  --color-gray: #d9d9d9;
+  --color-black: #000000;
+  --color-darkergray: #494949;
+  --color-darkgray: #9a9a9a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: var(--color-yellow) var(--color-ligthblack);
+}
+body {
+  font-family: "Poppins", "Contrail One";
+  background-color: var(--color-ligthblack);
+}
+::selection {
+  background-color: var(--color-yellow);
+  color: var(--color-white);
+}
+nav {
+  width: 100%;
+  padding: 15px 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .links ul {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
+}
+nav .links ul li a {
+  text-decoration: none;
+  color: var(--color-darkgray);
+  font-size: 1rem;
+  font-weight: 400;
+}
+nav .links ul li a:hover {
+  color: var(--color-white);
+}
+nav .links ul li a.active {
+  color: var(--color-white);
+}
+nav .links ul li a {
+  text-decoration: none;
+  color: var(--color-darkgray);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+nav .icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.icons .search {
+  height: 25px;
+  cursor: pointer;
+}
+.icons .cart {
+  height: 25px;
+  cursor: pointer;
+}
+.icons .loginbtn {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border: 2px solid var(--color-yellow);
+  border-radius: 50px;
+  background-color: var(--color-ligthblack);
+  color: var(--color-white);
+  font-family: poppins;
+  font-weight: 500;
+  font-size: 1rem;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+}
+.icons .loginbtn:hover {
+  background-color: var(--color-yellow);
+}
+.icons .search svg {
+  stroke: var(--color-white);
+  fill: none;
+  width: 25px;
+}
+.icons .search svg:hover {
+  stroke: var(--color-yellow);
+}
+.icons .cart svg {
+  stroke: var(--color-white);
+  fill: none;
+  width: 25px;
+}
+.icons .cart svg:hover {
+  stroke: var(--color-yellow);
+}
+.icons .loginbtn svg {
+  stroke: var(--color-white);
+  fill: none;
+  width: 25px;
+}
+main {
+  width: 100%;
+  padding: 0 95px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+main .left_side {
+  margin-top: 30px;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  color: var(--color-white);
+}
+.left_side .top {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.left_side .top h1 {
+  font-family: "Contrail One";
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--color-white);
+}
+.left_side .top h1 span::selection {
+  background-color: var(--color-white);
+  color: var(--color-yellow);
+}
+.left_side .top h1 span {
+  color: var(--color-yellow);
+}
+.left_side .top p {
+  color: var(--color-white);
+  font-weight: 300;
+}
+.left_side .top button {
+  margin-top: 15px;
+  padding: 11px;
+  width: 150px;
+  background-color: var(--color-yellow);
+  border: 2px solid var(--color-yellow);
+  border-radius: 50px;
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-white);
+  cursor: pointer;
+}
+.left_side .top button:hover {
+  background-color: var(--color-ligthblack);
+  border: 2px solid var(--color-yellow);
+  color: var(--color-yellow);
+}
+.left_side .bottom {
+  display: flex;
+  align-items: center;
+}
+.left_side .bottom .pics {
+  height: 70px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.left_side .bottom .text {
+  height: 60px;
+  width: 60%;
+}
+.left_side .bottom .pics .pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: var(--color-yellow);
+  border: 3px solid var(--color-ligthblack);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left_side .bottom .pics .pic:hover {
+  z-index: 1;
+  position: relative;
+  bottom: 3px;
+}
+.left_side .bottom .pics .n1 img {
+  position: relative;
+  top: 15px;
+  right: 5px;
+}
+.left_side .bottom .pics .n2 {
+  position: relative;
+  right: 12px;
+}
+.left_side .bottom .pics .n3 {
+  position: relative;
+  right: 24px;
+}
+.left_side .bottom .pics .n3 img {
+  position: relative;
+  top: 15px;
+}
+.left_side .bottom .pics .n2 img {
+  position: relative;
+  top: 18px;
+  right: 5px;
+}
+.bottom .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: -20px;
+  gap: 5px;
+}
+.bottom .text h4 {
+  color: var(--color-white);
+  font-weight: 500;
+}
+.bottom .text .rate_t {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-white);
+  font-weight: 500;
+}
+.bottom .text .rate_t svg {
+  fill: var(--color-yellow);
+}
+.bottom .text .rate_t span {
+  color: var(--color-darkgray);
+  font-weight: 300;
+}
+.rigth_side {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 60%;
+  position: relative;
+}
+.rigth_side .shadow {
+  position: absolute;
+  top: 0;
+}
+.rigth_side .smile {
+  position: absolute;
+  top: 50px;
+  left: 130px;
+  animation: smilee 6s ease-in-out infinite alternate;
+}
+.rigth_side .n1 {
+  position: absolute;
+  bottom: 150px;
+  right: 0;
+  animation: rece 5s ease-in-out infinite alternate;
+}
+.rigth_side .n2 {
+  position: absolute;
+  bottom: 20px;
+  left: 250px;
+  animation: recee 5s ease-in-out infinite alternate;
+}
+.rigth_side .fire {
+  position: absolute;
+  top: 80px;
+  right: -20px;
+  animation: firee 4s ease-in-out infinite alternate;
+}
+@keyframes smilee {
+  0% {
+    top: 50px;
+    left: 130px;
+  }
+  100% {
+    top: 90px;
+    left: 130px;
+  }
+}
+@keyframes rece {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes recee {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: -360deg;
+  }
+}
+@keyframes firee {
+  0% {
+    top: 80px;
+    right: -20px;
+  }
+  100% {
+    top: 30px;
+    right: -20px;
+  }
+}
+.rigth_side .phone {
+  position: absolute;
+  left: 15%;
+  bottom: 190px;
+  width: fit-content;
+  background-color: var(--color-ligthblack);
+  box-shadow: 15px 5px 20px rgba(0, 0, 0, 0.61);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  justify-content: space-between;
+  gap: 10px;
+  transition: 0.5s ease-in-out;
+}
+.rigth_side .phone:hover {
+  bottom: 210px;
+  transition: 0.5s ease-in-out;
+}
+.rigth_side .phone .name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rigth_side .phone .name .n {
+  color: var(--color-white);
+}
+.rigth_side .phone .name .n h4 {
+  font-weight: 500;
+}
+.rigth_side .phone .name .n h5 {
+  color: var(--color-darkgray);
+  font-weight: 300;
+}
+.rigth_side .phone .name .photo {
+  width: 40px;
+  height: 40px;
+  background-color: #d0dde4;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rigth_side .phone .name .photo img {
+  position: relative;
+  top: 15px;
+  left: -3px;
+}
+.rigth_side .phone .icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-yellow);
+  border-radius: 50px;
+}
+.rigth_side .card {
+  position: absolute;
+  right: -50px;
+  bottom: 4%;
+  width: fit-content;
+  background-color: var(--color-ligthblack);
+  box-shadow: 15px 5px 20px rgba(0, 0, 0, 0.61);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  justify-content: space-between;
+  gap: 10px;
+  transition: 0.5s ease-in-out;
+}
+.rigth_side .card:hover {
+  bottom: 50px;
+  transition: 0.5s ease-in-out;
+}
+.rigth_side .card .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+.rigth_side .card .name .na h3 {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 18px;
+}
+.rigth_side .card .name .price h3 {
+  color: var(--color-white);
+  font-weight: 500;
+}
+.rigth_side .card .name .price h3 span {
+  color: var(--color-yellow);
+}
+
+@media (max-width: 1024px) {
+  nav {
+    padding: 15px 50px;
+  }
+  main {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  main .left_side {
+    width: 100%;
+  }
+  .left_side .top {
+    align-items: center;
+  }
+  .left_side .top h1 {
+    text-align: center;
+  }
+  .left_side .top p {
+    max-width: 450px;
+    text-align: center;
+  }
+  .left_side .bottom {
+    align-self: center;
+    gap: 10px;
+  }
+  .left_side .bottom .pics {
+    width: fit-content;
+  }
+  .left_side .bottom .pics .pic {
+    height: 50px;
+    width: 50px;
+  }
+  .left_side .bottom .text {
+    height: fit-content;
+    width: fit-content;
+  }
+  .left_side .bottom .text h4 {
+    font-size: 14px;
+  }
+
+  .bottom .text .rate_t svg {
+    width: 20px;
+  }
+  .rigth_side {
+    position: absolute;
+    top: 80px;
+    right: -200px;
+  }
+  .rigth_side .phone {
+    left: -600px;
+    bottom: 350px;
+    rotate: 20deg;
+  }
+  .rigth_side .phone:hover {
+    bottom: 380px;
+  }
+  .rigth_side .dish .smile {
+    left: -346px;
+    top: -26px;
+    animation: smilee 3s ease-in-out infinite alternate;
+  }
+  @keyframes smilee {
+    0% {
+      left: -346px;
+      top: -26px;
+    }
+    100% {
+      left: -346px;
+      top: -5px;
+    }
+  }
+  .rigth_side .dish .fire {
+    left: 136px;
+    top: -9px;
+    rotate: 7deg;
+    animation: firee 3s ease-in-out infinite alternate;
+  }
+  @keyframes firee {
+    0% {
+      left: 136px;
+      top: -9px;
+    }
+    100% {
+      left: 136px;
+      top: 60px;
+    }
+  }
+}
